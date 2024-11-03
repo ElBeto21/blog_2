@@ -1,0 +1,397 @@
+/* Archivo CSS para dar estilo a la página web */
+
+#navbar {
+    background-color: #1a1a1a; /* Color de fondo del menú */
+    padding: 10px; /* Espaciado interno del menú */
+}
+
+.menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    display: flex; /* Usamos flexbox para el menú horizontal */
+    justify-content: center; /* Centra el menú horizontalmente */
+}
+
+.menu li {
+    margin: 0 15px; /* Espaciado entre elementos del menú */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #1d0202; /* Color del texto de los enlaces */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    padding: 8px 15px; /* Espaciado interno de los enlaces */
+    border-radius: 5px; /* Bordes redondeados en los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+.menu a:hover {
+    background-color: #4CAF50; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo y colores generales */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #addae6; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid #ffbf00; /* Línea amarilla */
+}
+
+header .logo {
+    max-width: 50%; /* Ajusta el logo para que sea responsivo */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* MODO OSCURO*/
+body.dark-mode {
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+.dark-mode a {
+    color: #bb86fc; /* Color de enlaces en modo oscuro */
+}
+
+.dark-mode .section {
+    background-color: #1e1e1e; /* Fondo de secciones en modo oscuro */
+    border-color: #333; /* Color de borde en modo oscuro */
+}
+
+/* Sección principal */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem; /* Añadido padding para las secciones */
+    border-radius: 8px; /* Bordes redondeados para las secciones */
+    background-color: #ffffff; /* Fondo blanco para secciones */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+h2 {
+    color: #003366; /* Azul oscuro */
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+p, ul {
+    margin-bottom: 1rem;
+}
+
+/* Lista de características */
+ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+#video {
+    text-align: center; /* Centra el contenido */
+    margin: 2rem 0; /* Espaciado superior e inferior */
+}
+
+#video iframe, #video video {
+    max-width: 100%; /* Hace que el video se adapte a pantallas más pequeñas */
+    height: auto; /* Mantiene la proporción del video */
+}
+
+/* Estilos para el Quiz */
+#quiz {
+    background-color: #e3f2fd; /* Azul claro */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+#contact ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Quitar padding */
+}
+
+#contact li {
+    margin: 5px 0; /* Espaciado entre los elementos de la lista */
+}
+
+.social-media {
+    display: flex; /* Usar flexbox para alinear redes sociales */
+    justify-content: center; /* Centrar las redes sociales */
+}
+
+.social-media li {
+    margin: 0 10px; /* Espaciado entre enlaces de redes sociales */
+}
+
+.social-media a {
+    color: #1e90ff; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
+/* Efectos de hover para los títulos */
+section h2:hover {
+    color: #ffbf00;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Ajustes de tamaño para pantallas pequeñas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos específicos para dispositivos móviles (hasta 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem; /* Menos padding en el encabezado */
+    }
+
+    header h1 {
+        font-size: 1.4rem; /* Tamaño más pequeño para móviles */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Tamaño más pequeño para títulos */
+    }
+
+    section {
+        padding: 0.5rem; /* Menos padding en las secciones */
+    }
+
+    p, ul {
+        font-size: 0.9rem; /* Texto un poco más pequeño */
+    }
+
+    footer h3 {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en el pie de página */
+    }
+
+    footer li {
+        font-size: 0.8rem; /* Texto más pequeño para las listas */
+    }
+
+    .option-label {
+        padding: 0.4rem; /* Menos padding en las opciones */
+    }
+}
+
+/* Estilo de opciones en el Quiz */
+.option-label {
+    display: block;
+    padding: 0.5rem;
+    background-color: #e3f2fd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0.2rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-label:hover {
+    background-color: #bbdefb;
+}
+
+input[type="radio"]:checked + .option-label {
+    background-color: #c8e6c9; /* Verde claro cuando está seleccionado */
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+}
+
+body.dark-mode #submit-quiz {
+    background-color: #ffbf00;
+    color: #333;
+}
+
+/* Oculta los modales por defecto */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos generales para la sección de integrantes */
+#integrantes {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título de la sección */
+#integrantes h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #007BFF; /* Color azul para el título */
+}
+
+/* Estilos para cada integrante */
+.integrante {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #ffffff; /* Fondo blanco para los nombres */
+    border: 1px solid #007BFF; /* Borde azul */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+/* Efecto hover para cada integrante */
+.integrante:hover {
+    background-color: #e7f1ff; /* Fondo azul claro al pasar el mouse */
+}
+
+/* Estilo para los roles */
+.integrante span {
+    font-weight: bold; /* Resaltar los roles */
+    color: #555; /* Color gris para los roles */
+}
+
+/* Estilos para el pie de página */
+#referencias {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #282c34; /* Color de fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    border-top: 4px solid #28a745; /* Borde superior verde */
+}
+
+/* Título del pie de página */
+#referencias h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #28a745; /* Color verde para el título */
+}
+
+/* Estilos para la lista de referencias */
+#referencias ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0; /* Quitar padding */
+}
+
+/* Estilo para cada referencia */
+#referencias li {
+    margin: 0.5rem 0;
+}
+
+/* Estilo para los enlaces */
+#referencias a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #61dafb; /* Color azul claro para los enlaces */
+}
+
+#referencias a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+#referencias p {
+    margin-top: 1rem; /* Espacio entre la lista y el texto */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: #dddddd; /* Color gris claro para el texto */
+}
+
+
+/* Estilo del botón de cerrar */
+.close {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/* Efecto hover para el título */
+.section-title {
+    cursor: pointer;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.section-title:hover {
+    color: #ffbf00;
+}
